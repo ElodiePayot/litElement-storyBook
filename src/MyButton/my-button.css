@@ -1,0 +1,91 @@
+:host {
+    --my-button-font-size: var(--h3-font-size);
+    --my-button-font-weight: var(--h3-font-weight);
+    --my-button-line-height:var(--h3-line-height);
+    --my-button-border: var(--px) solid var(--black);
+    --my-button-border-radius: var(--spacing);
+    --my-button-padding: var(--spacing) calc(var(--spacing) * 4.5);
+    --my-button-transition: var(--transition-base);
+
+    /* small */
+    --my-button-small-padding: calc(var(--spacing) * 0.5) calc(var(--spacing) * 2);
+    --my-button-small-font-size: var(--text-base-font-size);
+    --my-button-small-line-height: var(--text-base-line-height);
+
+    /* large */
+    --my-button-large-padding: var(--spacing) calc(var(--spacing) * 8);
+    --my-button-large-font-size: var(--h2-font-size);
+    --my-button-large-line-height: var(--h2-line-height);
+
+    /* primary */
+    --my-button-primary-color:var(--black);
+    --my-button-primary-background:var(--primary);
+    --my-button-primary-border-color:var(--primary);
+    --my-button-hover-primary-color:var(--black);
+    --my-button-hover-primary-background:var(--primary-dark);
+    --my-button-hover-primary-border-color:var(--primary-dark);
+
+    /* secondary */
+    --my-button-secondary-color:var(--black);
+    --my-button-secondary-background:var(--secondary);
+    --my-button-secondary-border-color:var(--secondary);
+    --my-button-hover-secondart-color:var(--black);
+    --my-button-hover-secondart-background:var(--secondart-dark);
+    --my-button-hover-secondart-border-color:var(--secondart-dark);
+
+    /* disabled */
+    --my-button-disabled-opacity: 0.5;
+}
+
+button {
+    padding: var(--my-button-padding);
+    color: var(--my-button-color);
+    border: var(--my-button-border);
+    border-radius: var(--my-button-border-radius);
+    font-size: var(--my-button-font-size);
+    line-height: var(--my-button-line-height);
+    font-weight: var(--my-button-font-weight);
+    transition: var(--my-button-transition);
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover {
+    transition: var(--my-button-transition);
+}
+
+button[size="small"] {
+    padding: var(--my-button-small-padding);
+    font-size: var(--my-button-small-font-size);
+    line-height: var(--my-button-small-line-height);
+}
+
+button[size="large"] {
+    padding: var(--my-button-large-padding);
+    font-size: var(--my-button-large-font-size);
+    line-height: var(--my-button-large-line-height);
+}
+
+button[background="primary"] {
+    background-color: var(--my-button-primary-background);
+    color: var(--my-button-primary-color);
+    border-color: var(--my-button-primary-border-color)
+}
+
+button[background="primary"]:hover {
+    background-color: var(--my-button-hover-primary-background);
+    color: var(--my-button-hover-primary-color);
+    border-color: var(--my-button-hover-primary-border-color)
+}
+
+button[background="secondary"] {
+    background-color: var(--my-button-secondary-background);
+    color: var(--my-button-secondary-color);
+    border-color: var(--my-button-secondary-border-color)
+}
+
+button[background="secondary"]:hover {
+    background-color: var(--my-button-hover-secondary-background);
+    color: var(--my-button-hover-secondary-color);
+    border-color: var(--my-button-hover-secondary-border-color)
+}

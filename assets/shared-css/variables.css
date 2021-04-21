@@ -1,0 +1,85 @@
+:root {
+    /* palette */
+    --primary: #46BEA4;
+    --primary-dark: #39A08A;
+    --secondary: #F6C85D;
+    --secondary-dark: #D9AF4E;
+    --danger: #CE3737;
+    --success: var(--primary);
+    --black: #121212;
+    --black-light: #888888;
+    --black-extra-light: #D8D8D8;
+    --light:#F5F5F5;
+    --white: #FFFF;
+    --transparent: transparent;
+
+    /* Texts */
+        /* font-family */
+    --font-family-base: 'Raleway', 'sans serif';
+
+        /* weights */
+    --font-weight-base: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+        /* sizes */
+    --font-size-sm: 0.625rem;
+
+        /* text-variants */
+    --text-base-font-size: 0.875rem;
+    --text-base-line-height: 1.375rem;
+    --text-base-font-weight: var(--font-weight-base);
+
+    --text-sm-font-size: 0.75rem;
+    --text-sm-line-height: 1.25rem;
+    --text-sm-font-weight: var(--font-weight-base);
+
+        /* headings */
+    --h1-font-size: 1.5rem;
+    --h1-line-height: 1.5rem;
+    --h1-font-weight: var(--font-weight-semibold);
+
+    --h2-font-size: 1.125rem;
+    --h2-line-height: 1.5rem;
+    --h2-font-weight: var(--font-weight-semibold);
+
+    --h3-font-size: 1rem;
+    --h3-line-height: 1.5rem;
+    --h3-font-weight: var(--font-weight-semibold);
+
+    /* Spacings */
+    --spacing: 0.5rem;
+    --px: 0.063rem;
+
+    /* Transitions */
+    --transition-base: 0.3s ease-in-out;
+    --transition-slow: 0.4s ease-in-out;
+
+    /* Layout */
+    --opacity-md: 0.6;
+    --zindex-fixed: 100;
+
+    /* Grid */
+    --grid-gutter: calc(var(--spacing) * 2);
+}
+
+/* responsive variables */
+
+@media (min-width: 768px) {
+    :root {
+       /* headings */
+       --h1-font-size: 2.5rem;
+       --h1-line-height: 2.5rem;
+   
+       --h2-font-size: 1.825rem;
+       --h2-line-height: 2.25rem;
+   
+       --h3-font-size: 1.5rem;
+       --h3-line-height: 2rem;
+
+        /* text-variants */
+       --text-base-font-size: 1rem;
+       --text-base-line-height: 1.5rem;
+    }
+   
+}

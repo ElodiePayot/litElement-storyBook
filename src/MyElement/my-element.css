@@ -1,0 +1,40 @@
+/* all my-element styles here */
+
+:host {
+    --my-element-color: var(--black);
+    --my-element-height: 100vh;
+    --my-element-width: 100vw;
+    --my-element-text-align: center;
+    --my-element-link-transition: var(--transition-base);
+
+    --tablet-my-element-max-width: 70%;
+
+    color: var(--my-element-color);
+    text-align: var(--my-element-text-align);
+    height: var(--my-element-height);
+    width: var(--my-element-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--grid-gutter);
+}
+
+:host a {
+    color: var(--my-element-color);
+    transition: var(--my-element-link-transition);
+}
+
+:host a:hover {
+    text-decoration: none;
+    transition: var(--my-element-link-transition);
+}
+
+@media (min-width: 768px) {
+    :host {
+        max-width: var(--tablet-my-element-max-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
